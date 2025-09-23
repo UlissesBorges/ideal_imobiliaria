@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ideal Imobiliaria - Imóveis Perfeitos para Você</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="assets/logo.png" alt="Ideal Imobiliaria"></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#properties">Imóveis</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>Bem-vindo à Ideal Imobiliaria</h1>
+      <p>Investir em imóveis é investir no seu futuro!</p>
+      <p>Compras, Vendas, Alugueis e Avaliações.</p>
+      <button onclick="scrollToSection('properties')">Ver Imóveis</button>
+    </section>
+
+    <section id="properties" class="properties">
+      <h2>Nossos Imóveis</h2>
+      <div class="property-grid">
+        <!-- Card 1 -->
+        <div class="property-card">
+          <img src="assets/house-1.jpg" alt="Casa Confortável no Subúrbio">
+          <div class="property-info">
+            <h3>Casa Confortável no Subúrbio</h3>
+            <p class="price">R$ 500.000</p>
+            <p>3 quartos · 2 banheiros · 180m²</p>
+            <p class="location">📍 Subúrbio, Domingos Martins</p>
+            <div class="buttons">
+              <button class="btn-details" onclick="showDetails('Casa Confortável no Subúrbio')">Ver Detalhes</button>
+              <button class="btn-visit" onclick="scheduleVisit('Casa Confortável no Subúrbio')">Agendar Visita</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="property-card">
+          <img src="assets/apartment-1.jpg" alt="Apartamento Moderno no Centro">
+          <div class="property-info">
+            <h3>Apartamento Moderno no Centro</h3>
+            <p class="price">R$ 300.000</p>
+            <p>2 quartos · 1 banheiro · 90m²</p>
+            <p class="location">📍 Centro, Domingos Martins</p>
+            <div class="buttons">
+              <button class="btn-details" onclick="showDetails('Apartamento Moderno no Centro')">Ver Detalhes</button>
+              <button class="btn-visit" onclick="scheduleVisit('Apartamento Moderno no Centro')">Agendar Visita</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="property-card">
+          <img src="assets/chacara-1.jpg" alt="Villa Luxuosa à Beira-Mar">
+          <div class="property-info">
+            <h3>Villa Luxuosa à Beira-Mar</h3>
+            <p class="price">R$ 1.000.000</p>
+            <p>4 quartos · 3 banheiros · 350m²</p>
+            <p class="location">📍 Praia, Domingos Martins</p>
+            <div class="buttons">
+              <button class="btn-details" onclick="showDetails('Villa Luxuosa à Beira-Mar')">Ver Detalhes</button>
+              <button class="btn-visit" onclick="scheduleVisit('Villa Luxuosa à Beira-Mar')">Agendar Visita</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Fale Conosco</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Seu nome">
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="message" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Horário de Funcionamento</h3>
+        <p>Segunda à Sexta:<i> xx às xx - xx às xx</i></p>
+        <p>Sábado: <i>xx às xx</i></p>
+        <p>Domingo: <i>Fechado</i></p>
+      </div>
+      <!-- Contatos -->
+      <div class="box">
+        <h3>Nossos Contatos</h3>
+        <p><i class="fas fa-envelope"></i> exemplo@gmail.com</p>
+        <a href="https://www.instagram.com/ideal_imobiliaria_" target="_blank" class="instagram-link">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://wa.me/5533988727921" target="_blank" class="whatsapp-link">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+
+      <!-- Mapa -->
+      <div class="box">
+        <h3>Mapa de Localização</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.3932873724902!2d-40.98596962566843!3d-18.780618503547316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb6a2235d4f5497%3A0x49174044d26f4138!2sR.%20S%C3%A3o%20Jos%C3%A9%2C%2015%20-%20Mantena%2C%20MG%2C%2035290-000!5e0!3m2!1spt-BR!2sbr!4v1758584072679!5m2!1spt-BR!2sbr"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+    <p class="footer-copy">&copy; 2025 Ideal Imobiliária. Todos os direitos reservados.</p>
+  </footer>
+
+
+  <!-- Modal -->
+  <div id="detailsModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p>Mais informações em breve.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
