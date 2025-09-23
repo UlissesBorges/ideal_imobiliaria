@@ -30,62 +30,108 @@
 
     <section id="properties" class="properties">
       <h2>Nossos Imóveis</h2>
-      <div class="property-grid">
+      <div class="cards-container">
         <!-- Card 1 -->
         <div class="property-card">
-          <img src="assets/house-1.jpg" alt="Casa Confortável no Subúrbio">
+          <div class="carousel">
+            <img src="assets/cs_praia_costa_dourada.jpg" alt="Casa 1" class="active">
+            <img src="assets/cs_praia_costa_dourada2.jpg" alt="Casa 2">
+            <img src="assets/cs_praia_costa_dourada3.jpg" alt="Casa 3">
+            <img src="assets/cs_praia_costa_dourada4.jpg" alt="Casa 3">
+            <img src="assets/cs_praia_costa_dourada5.jpg" alt="Casa 3">
+            <img src="assets/cs_praia_costa_dourada6.jpg" alt="Casa 3">
+            <img src="assets/cs_praia_costa_dourada7.jpg" alt="Casa 3">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
           <div class="property-info">
-            <h3>Casa Confortável no Subúrbio</h3>
+            <h3>Casa na Praia Costa Dourada - Bahia | Área de 4 Lotes</h3>
             <p class="price">R$ 500.000</p>
-            <p>3 quartos · 2 banheiros · 180m²</p>
-            <p class="location">📍 Subúrbio, Domingos Martins</p>
+            <p>Descubra o paraíso em plena Costa Dourada, Bahia, com esta exclusiva casa à venda que abrange uma área de 4 lotes. Ideal para quem busca conforto, espaço e contato direto com a natureza, essa propriedade é perfeita para famílias que desejam desfrutar do melhor que a vida praiana oferece.</p>
+            <p class="location">📍 Situada na deslumbrante região da Costa Dourada</p>
             <div class="buttons">
-              <button class="btn-details" onclick="showDetails('Casa Confortável no Subúrbio')">Ver Detalhes</button>
-              <button class="btn-visit" onclick="scheduleVisit('Casa Confortável no Subúrbio')">Agendar Visita</button>
+              <button class="btn-details" onclick="showDetails('Casa na Praia Costa Dourada - Bahia | Área de 4 Lotes')">Ver Detalhes</button>
+              <button class="btn-visit">Agendar Visita</button>
             </div>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div class="property-card">
-          <img src="assets/apartment-1.jpg" alt="Apartamento Moderno no Centro">
+          <div class="carousel">
+            <img src="assets/terreno_piscina.jpg" alt="Terreno 1" class="active">
+            <img src="assets/terreno_piscina2.jpg" alt="Terreno 2">
+            <img src="assets/terreno_piscina3.jpg" alt="Terreno 3">
+            <img src="assets/terreno_piscina4.jpg" alt="Terreno 4">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
           <div class="property-info">
-            <h3>Apartamento Moderno no Centro</h3>
+            <h3>Terreno de 5,3 hectares a apenas 3 km da cidade de Mantena – MG</h3>
             <p class="price">R$ 300.000</p>
-            <p>2 quartos · 1 banheiro · 90m²</p>
-            <p class="location">📍 Centro, Domingos Martins</p>
+            <p>Terreno de 5,3 hectares a apenas 3 km da cidade de Mantena – um verdadeiro refúgio de paz para quem busca qualidade de vida e tranquilidade!</p>
+            <p class="location">📍 apenas 3 km da cidade de Mantena, facilitando o acesso.</p>
             <div class="buttons">
-              <button class="btn-details" onclick="showDetails('Apartamento Moderno no Centro')">Ver Detalhes</button>
-              <button class="btn-visit" onclick="scheduleVisit('Apartamento Moderno no Centro')">Agendar Visita</button>
+              <button class="btn-details" onclick="showDetails('Terreno Rural em Mantena - ES | Área de 5,3 hectares')">Ver Detalhes</button>
+              <button class="btn-visit">Agendar Visita</button>
             </div>
           </div>
         </div>
 
         <!-- Card 3 -->
         <div class="property-card">
-          <img src="assets/chacara-1.jpg" alt="Villa Luxuosa à Beira-Mar">
+          <div class="carousel">
+            <img src="assets/chacara.jpg" alt="Chácara 1" class="active">
+            <img src="assets/chacara2.jpg" alt="Chácara 2">
+            <img src="assets/chacara3.jpg" alt="Chácara 3">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
           <div class="property-info">
-            <h3>Villa Luxuosa à Beira-Mar</h3>
+            <h3>Chácara de 1644m² a apenas 1km de Mantena – Sua oportunidade de morar perto da natureza!</h3>
             <p class="price">R$ 1.000.000</p>
-            <p>4 quartos · 3 banheiros · 350m²</p>
-            <p class="location">📍 Praia, Domingos Martins</p>
+            <p>Espaço perfeito para construir sua casa dos sonhos, lazer ou até mesmo para investimento.</p>
+            <p class="location">📍 Apenas 1km do centro de Mantena</p>
             <div class="buttons">
-              <button class="btn-details" onclick="showDetails('Villa Luxuosa à Beira-Mar')">Ver Detalhes</button>
-              <button class="btn-visit" onclick="scheduleVisit('Villa Luxuosa à Beira-Mar')">Agendar Visita</button>
+              <button class="btn-details" onclick="showDetails('Chácara em Mantena - ES | Área de 1644m²')">Ver Detalhes</button>
+              <button class="btn-visit">Agendar Visita</button>
             </div>
           </div>
         </div>
+        
+        <!-- Card 4 -->
+        <div class="property-card">
+          <div class="carousel">
+            <img src="assets/casa.jpg" alt="Casa 4" class="active">
+            <img src="assets/casa2.jpg" alt="Casa 4 - 2">
+            <img src="assets/casa3.jpg" alt="Casa 4 - 3">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+          <div class="property-info">
+            <h3>Área de 481m² na Rua São Francisco</h3>
+            <p class="price">R$ 750.000</p>
+            <p>Excelente oportunidade para você investir ou montar seu ponto comercial em uma das áreas que mais cresce e valoriza na cidade!</p>
+            <p class="location">📍  Rua São Francisco</p>
+            <div class="buttons">
+              <button class="btn-details" onclick="showDetails('Área de 481m² na Rua São Francisco')">Ver Detalhes</button>
+              <button class="btn-visit">Agendar Visita</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <section id="contact" class="contact">
       <h2>Fale Conosco</h2>
-      <form id="contactForm">
+      <form id="contactForm" action="https://formspree.io/f/mzzjbgek" method="POST">
         <input type="text" name="name" placeholder="Seu nome">
         <input type="email" name="email" placeholder="Seu e-mail" required>
         <textarea name="message" placeholder="Sua mensagem" required></textarea>
         <button type="submit">Enviar</button>
       </form>
+
     </section>
   </main>
 
@@ -93,10 +139,11 @@
     <div class="box-container">
       <div class="box">
         <h3>Horário de Funcionamento</h3>
-        <p>Segunda à Sexta:<i> xx às xx - xx às xx</i></p>
-        <p>Sábado: <i>xx às xx</i></p>
+        <p>Segunda à Sexta:<i> 08:00 às 11:30 - 13:00 às 18:00</i></p>
+        <p>Sábado: <i> 08:00 às 13:00</i></p>
         <p>Domingo: <i>Fechado</i></p>
       </div>
+
       <!-- Contatos -->
       <div class="box">
         <h3>Nossos Contatos</h3>
@@ -119,7 +166,12 @@
       </div>
 
     </div>
-    <p class="footer-copy">&copy; 2025 Ideal Imobiliária. Todos os direitos reservados.</p>
+    <p class="footer-copy">
+      &copy; 2025 Ideal Imobiliária. Todos os direitos reservados. |
+      <a href="privacidade.html" style="color:#926c00; text-decoration:none;">Política de Privacidade</a>
+    </p>
+
+
   </footer>
 
 
@@ -127,10 +179,10 @@
   <div id="detailsModal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
-      <h2 id="modalTitle"></h2>
-      <p>Mais informações em breve.</p>
+      <div id="modalDescription"></div>
     </div>
   </div>
+
 
   <script src="script.js"></script>
 </body>
