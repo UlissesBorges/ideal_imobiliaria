@@ -22,9 +22,9 @@ Google Maps: integrado no footer para localização da imobiliária.
 
 HTML5
 
-CSS3
+CSS
 
-JavaScript (Vanilla)
+JavaScript 
 
 Formspree para envio de formulário
 
