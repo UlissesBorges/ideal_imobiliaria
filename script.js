@@ -22,21 +22,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Botões Agendar Visita
-  const visitButtons = document.querySelectorAll('.btn-visit');
-  visitButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      const propertyCard = this.closest('.property-card');
-      const propertyName = propertyCard.querySelector('h3').innerText;
+// Botões Agendar Visita
+const visitButtons = document.querySelectorAll('.btn-visit');
 
-      const phone = "5533988727921";
-      const message = `Olá! Quero agendar uma visita para o imóvel: ${propertyName}`;
-      const encodedMessage = encodeURIComponent(message);
+visitButtons.forEach(button => {
+  button.addEventListener('click', function () {
+    const propertyCard = this.closest('.property-card');
+    const propertyName = propertyCard.querySelector('h3').innerText;
 
-      const url = `https://web.whatsapp.com/send?phone=${phone}&text=${encodedMessage}`;
-      window.open(url, "_blank");
-    });
+    const phone = "5533988727921";
+    const message = `Olá! Quero agendar uma visita para o imóvel: ${propertyName}`;
+    const encodedMessage = encodeURIComponent(message);
+
+    // Detecta se é mobile
+    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+
+    // Define a URL correta
+    const url = isMobile
+      ? `https://wa.me/${phone}?text=${encodedMessage}`          // Mobile abre app
+      : `https://web.whatsapp.com/send?phone=${phone}&text=${encodedMessage}`; // Desktop abre web
+
+    window.open(url, "_blank");
   });
+});
+
+
 
   // Carrossel de imagens
   document.querySelectorAll('.carousel').forEach(carousel => {
