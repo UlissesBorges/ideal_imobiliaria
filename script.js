@@ -30,7 +30,7 @@ visitButtons.forEach(button => {
     const propertyCard = this.closest('.property-card');
     const propertyName = propertyCard.querySelector('h3').innerText;
 
-    const phone = "5533988727921";
+    const phone = "5527997885798";
     const message = `Olá! Quero agendar uma visita para o imóvel: ${propertyName}`;
     const encodedMessage = encodeURIComponent(message);
 
